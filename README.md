@@ -18,4 +18,8 @@ virtualenv 取一個名稱
 activate  
   
 -相關-  
-
+virtualenv->virtualenv -p python3.10 XXX  
+  
+https://github.com/google-ai-edge/mediapipe  
+https://github.com/ultralytics/ultralytics  
+https://www.runoob.com/python3/python3-tutorial.html  
