@@ -1,0 +1,159 @@
+<html>
+  <head>
+  <title>BMI值計算器</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=big5">
+  <style type="text/css">
+  
+  </style>
+  <script language="JavaScript" type="text/JavaScript">
+  <!--
+  function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+    if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+      document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+    else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+  }
+  MM_reloadPage(true);
+  
+  function MM_findObj(n, d) { //v4.01
+    var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+      d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+    if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+    for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+    if(!x && d.getElementById) x=d.getElementById(n); return x;
+  }
+  
+  function MM_showHideLayers() { //v6.0
+    var i,p,v,obj,args=MM_showHideLayers.arguments;
+    for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+      if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+      obj.visibility=v; }
+  }
+  function computingBMI() {
+    number = /[0-9]/;
+    var flag = true;
+    var objHeight = document.form1.height;
+    var objWeight = document.form1.weight;
+    var height = Number(objHeight.value)/100;
+    var weight = Number(objWeight.value);
+    if (objHeight==null || objHeight.value=="") {
+      alert("請輸入您的身高");
+      flag = false;
+      return;
+    }
+    if (!number.test(height)) {
+      alert("您輸入的身高格式錯誤");
+      flag = false;
+      return;
+    }
+    if (objWeight==null || objWeight.value=="") {
+      alert("請輸入您的體重");
+      flag = false;
+    }
+    if (!number.test(weight)) {
+      alert("您輸入的體重格式錯誤");
+      flag = false;
+      return;
+    }
+    if (flag) {
+      var bmi = weight/(height*height);
+      document.form1.bmiValue.value = bmi.toString().substr(0,4);
+    }
+  }
+  //-->
+  </script>
+  <meta name="generator" content="Namo WebEditor(Trial)">
+  </head>
+  <body>
+  <table width="100%" cellspacing="0" cellpadding="0">
+    <tbody><tr> 
+      <td>
+        <div > 
+          <table width="728"cellpadding="0" cellspacing="0" height="918">
+                      <tbody>
+                        <tr>
+              <td height="49"></td>
+              <td height="49"></td>
+              <td height="49"></td>
+              <td height="49"> </td>
+                      </tr>
+            <tr> 
+              <td colspan="3" valign="top"> 
+                <table width="100%"  cellspacing="0" cellpadding="0" height="827">
+                  <tbody>   
+                        <tr> 
+                          <td height="50" colspan="2"><div > 
+                              <table width="90%"  cellpadding="0" cellspacing="0">
+                                                              <tbody><tr>
+                                                             
+                                                                      <table width="90%" cellpadding="0" cellspacing="0">
+                                                                          <tbody><tr>
+                                                                              <td>
+                                                                                  <form name="form1" method="post" action="">
+                                                                                      <div ><strong>快看看自己的BMI是否在理想範圍吧!</strong> 
+                                              <br>
+                                                                                      </div>
+                                                                                      <table width="400" cellpadding="3" cellspacing="3" height="135">
+                                                                                          <tbody><tr>
+                                                                                              <td width="230" height="21" class="01">
+                                                                                                  <div><span class="01">身　高:</span> 
+                                                    <input name="height" type="text" size="11" style="border: 1px solid #0B6060">
+                                                    cm</div>
+                                                                                              </td>
+                                                                                              <td width="149" height="21">
+                                                  <input type="button" name="Submit" value="開始計算" onclick="computingBMI()">
+                                                                                              </td>
+                                                                                          </tr>
+                                                                                          <tr>
+                                                                                              <td width="230" height="21" class="01">
+                                                                                                  <div >體　重: 
+                                                    <input name="weight" type="text" size="11" style="border: 1px solid #0B6060">
+                                                    kg</div>
+                                                                                              </td>
+                                                                                              <td width="149" height="21"><input type="reset" name="Submit2" value="清除重算"></td>
+                                                                                          </tr>
+                                                                                          <tr>
+                                                                                              <td colspan="2" height="10">
+                                                                                                  <p style="margin-top: 0; margin-bottom: 0" >
+                                                    &nbsp;</p></td>
+                                                                                          </tr>
+                                                                                          <tr>
+                                                                                              <td height="24" colspan="2">
+                                                                                                  <div class="01">你的BMI為<br>
+                                                    <input name="bmiValue" type="text" size="15" style="border: 1px solid #2B737B; padding-left: 4; padding-right: 4; padding-top: 1; padding-bottom: 1; background-color: #D9F4F1">
+                                                                                                  </div>
+                                                                                              </td>
+                                                                                          </tr>
+                                                                                      </tbody></table>
+                                                                                  </form>
+                                          
+                                                                              </td>
+                                                                          </tr>
+                                                                      </tbody></table>
+                                    
+                                                                     
+                                                 
+                                                                  </td>
+                                                              </tr>
+                              </tbody></table>
+                            </div></td>
+                        </tr>
+                        <tr> 
+                          <td height="50" colspan="2"></td>
+                        </tr>
+                      </tbody></table></td>
+                  </tr>
+                  <tr> 
+                    <td height="48"></td>
+                  </tr>
+                </tbody></table></td>
+              <td >></td>
+            </tr>
+
+          </tbody></table>
+       
+        </div></td>
+    </tr>
+  </tbody></table>
+  
+  </body>
+  </html>
