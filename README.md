@@ -4,8 +4,8 @@ https://potplayer.daum.net/
 肢體運動影片  
 https://drive.google.com/drive/folders/1jmO1-FpdhX81nKpC3YEuV0rp55H4kUcZ?usp=sharing  
   
-  
-
+smeshariks  
+https://drive.google.com/file/d/1bRv0dZgdbpSG6i7oQNLSgUdqQvlVRKQ-/view?usp=drive_link  
 
 -虛擬環境安裝-  
  
