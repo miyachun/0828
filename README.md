@@ -1,3 +1,7 @@
+python軟體  
+https://www.python.org/downloads/windows/  
+
+
 影片播放軟體  
 https://potplayer.daum.net/  
 
