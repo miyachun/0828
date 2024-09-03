@@ -1,18 +1,3 @@
-Mediapipe codepen  
-https://codepen.io/mediapipe-preview/pens/showcase  
-
-
-python軟體  
-https://www.python.org/downloads/windows/  
-
-
-影片播放軟體  
-https://potplayer.daum.net/  
-
-肢體運動影片  
-https://drive.google.com/drive/folders/1jmO1-FpdhX81nKpC3YEuV0rp55H4kUcZ?usp=sharing  
-  
-
 -虛擬環境安裝-  
  
 1->環境變數  
@@ -29,7 +14,8 @@ activate
   
 -相關-  
 virtualenv->virtualenv -p python3.10 XXX  
-
-https://github.com/google-ai-edge/mediapipe  
-https://github.com/ultralytics/ultralytics  
 https://www.runoob.com/python3/python3-tutorial.html  
+python軟體  
+https://www.python.org/downloads/windows/  
+影片播放軟體  
+https://potplayer.daum.net/  
