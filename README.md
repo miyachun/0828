@@ -1,4 +1,6 @@
 -虛擬環境安裝-  
+python --version  
+
  
 1->環境變數  
 C:\Users\P101\AppData\Local\Programs\Python\Python310\Scripts\
