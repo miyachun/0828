@@ -20,7 +20,7 @@ virtualenv->virtualenv -p python3.10 XXX
 https://www.runoob.com/python3/python3-tutorial.html  
 https://flask.palletsprojects.com/en/3.0.x/installation/#python-version  
 https://steam.oxxostudio.tw/category/python/spider/yahoo-stock.html  
-
+氣象資料開放平臺->https://opendata.cwa.gov.tw  
 python軟體  
 https://www.python.org/downloads/windows/  
 影片播放軟體  
