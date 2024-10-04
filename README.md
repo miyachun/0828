@@ -1,6 +1,8 @@
 -虛擬環境安裝-  
 
 *查詢: python --version  
+
+  
 *python下載:
 Note that Python 3.10.10 cannot be used on Windows 7 or earlier.  
 [Download Windows installer (64-bit)](https://www.python.org/ftp/python/3.10.10/python-3.10.10-amd64.exe)  
