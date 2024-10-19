@@ -32,8 +32,6 @@ sudo raspi-config
 ifconfig  
 sudo reboot  
 
-git clone https://github.com/miyachun/raspberry  
-
 -Virtualenv-  
 python -m venv myenv  
 source myenv/bin/activate  
