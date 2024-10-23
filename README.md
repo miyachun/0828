@@ -25,7 +25,8 @@ https://www.raspberrypi.com/software/
 https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html  
 https://www.realvnc.com/en/connect/download/viewer/?lai_sr=0-4&lai_sl=l  
 https://images.theengineeringprojects.com/image/webp/2021/03/raspberry-pi-4.png.webp?ssl=1  
--指令-    
+
+*指令:    
 sudo apt update  
 sudo apt upgrade  
 sudo raspi-config  
@@ -48,6 +49,8 @@ https://learn.adafruit.com/circuitpython-on-raspberrypi-linux/installing-circuit
 virtualenv->virtualenv -p python3.10 XXX  
 RUNOOB->https://www.runoob.com/python3/python3-tutorial.html  
 FLASK->[https://flask.palletsprojects.com/en/3.0.x/installation/#python-version](https://flask.palletsprojects.com/en/3.0.x/)  
+Line Developer->https://developers.line.biz/en/  
+Line Flex Messages->https://developers.line.biz/en/docs/messaging-api/using-flex-messages/  
 STEAM 教育學習網->https://steam.oxxostudio.tw/category/python/spider/yahoo-stock.html  
 氣象資料開放平臺->https://opendata.cwa.gov.tw  
 python軟體->https://www.python.org/downloads/windows/  
