@@ -33,11 +33,11 @@ sudo raspi-config
 ifconfig  
 sudo reboot  
 
--Virtualenv-  
+*Virtualenv:  
 python -m venv myenv  
 source myenv/bin/activate  
 
--DHT11 DHT22-  
+*DHT11 DHT22  
 Python Setup  
 https://learn.adafruit.com/dht-humidity-sensing-on-raspberry-pi-with-gdocs-logging/python-setup  
 Installing the CircuitPython-DHT Library  
