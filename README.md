@@ -44,7 +44,19 @@ Installing the CircuitPython-DHT Library
 https://learn.adafruit.com/circuitpython-on-raspberrypi-linux/installing-circuitpython-on-raspberry-pi  
 
 ----------------------------------------------------------------------------------------------------------------------  
+-MQTT Pi4-
+sudo apt-get install mosquitto mosquitto-clients
+sudo systemctl enable mosquitto.service
+sudo nano /etc/mosquitto/mosquitto.conf
+listener 1883
+allow_anonymous true
+sudo reboot
+ifconfig
+pip install 'paho-mqtt<2.0.0'
+pip install rpi.gpio  
 
+
+-------------------------------------------------------------------------------------------------------------------------
 -其它相關-  
 virtualenv->virtualenv -p python3.10 XXX  
 RUNOOB->https://www.runoob.com/python3/python3-tutorial.html  
