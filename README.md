@@ -54,6 +54,7 @@ sudo reboot
 ifconfig  
 pip install 'paho-mqtt<2.0.0'  
 pip install rpi.gpio  
+git clone https://github.com/miyachun/raspberry-pi4-MQTT  
 
 
 -------------------------------------------------------------------------------------------------------------------------  
