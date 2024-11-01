@@ -38,7 +38,7 @@ python -m venv myenv
 source myenv/bin/activate  
 
 *安裝GPIO  
-pip install RPi.GPIO
+pip install rpi.gpio  
 
 *設定DHT11,DHT22:  
 Python Setup  
