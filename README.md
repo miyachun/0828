@@ -64,7 +64,6 @@ git clone https://github.com/miyachun/raspberry-pi4-MQTT
 
 -其它相關-  
 virtualenv->virtualenv -p python3.10 XXX  
-RUNOOB->https://www.runoob.com/python3/python3-tutorial.html  
 FLASK->[https://flask.palletsprojects.com/en/3.0.x/installation/#python-version](https://flask.palletsprojects.com/en/3.0.x/)  
 Line Developer->https://developers.line.biz/en/  
 Line Flex Messages->https://developers.line.biz/en/docs/messaging-api/using-flex-messages/  
