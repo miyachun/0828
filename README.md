@@ -37,6 +37,9 @@ sudo reboot
 python -m venv myenv  
 source myenv/bin/activate  
 
+*安裝GPIO  
+pip install RPi.GPIO
+
 *設定DHT11,DHT22:  
 Python Setup  
 https://learn.adafruit.com/dht-humidity-sensing-on-raspberry-pi-with-gdocs-logging/python-setup  
