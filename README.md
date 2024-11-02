@@ -71,6 +71,10 @@ STEAM 教育學習網->https://steam.oxxostudio.tw/category/python/spider/yahoo-
 氣象資料開放平臺->https://opendata.cwa.gov.tw/  
 桃園市資料開放平臺->https://data.tycg.gov.tw/  
 https://data.tycg.gov.tw/opendata/datalist/datasetMeta/outboundDesc?id=b7998dff-8c65-428a-b9b9-a2e9e13fdfb3&rid=5ae41ecf-1ea0-420d-acbf-90c59cedf999  
+https://odws.hccg.gov.tw/001/Upload/25/opendata/9059/59/5776ed30-fa3c-48f4-9876-d8fb28df0501.json?1130722174700  
+
+
+
 python軟體->https://www.python.org/downloads/windows/  
 影片播放軟體->https://potplayer.daum.net/  
 Ngrok軟體->https://ngrok.com/  
