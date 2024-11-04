@@ -1,4 +1,4 @@
-t
+
 -虛擬環境安裝-  
 
 *查詢: python --version  
