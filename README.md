@@ -71,9 +71,9 @@ Line Flex Messages->https://developers.line.biz/en/docs/messaging-api/using-flex
 STEAM 教育學習網->https://steam.oxxostudio.tw/category/python/spider/yahoo-stock.html  
 氣象資料開放平臺->https://opendata.cwa.gov.tw/  
 桃園市資料開放平臺->https://data.tycg.gov.tw/  
-https://data.tycg.gov.tw/opendata/datalist/datasetMeta?oid=5ca2bfc7-9ace-4719-88ae-4034b9a5a55c  
-https://data.tycg.gov.tw/opendata/datalist/datasetMeta/outboundDesc?id=7c80a48f-a3eb-446f-8d20-50d5b7a1e0da&rid=2cb206f2-3fb2-42d9-9820-f3291f6bc35c   
-https://data.tycg.gov.tw/opendata/datalist/datasetMeta/outboundDesc?id=b4cd6705-62c0-4d88-8d0b-c5dc210c2a63&rid=8fd11d4a-e389-4526-9fc5-6674108b0f5e    
+桃園公共自行車即時服務資料->https://data.tycg.gov.tw/opendata/datalist/datasetMeta?oid=5ca2bfc7-9ace-4719-88ae-4034b9a5a55c  
+桃園市友善特色藥局名單->https://data.tycg.gov.tw/opendata/datalist/datasetMeta/outboundDesc?id=7c80a48f-a3eb-446f-8d20-50d5b7a1e0da&rid=2cb206f2-3fb2-42d9-9820-f3291f6bc35c   
+桃園市居家服務機構一覽表->https://data.tycg.gov.tw/opendata/datalist/datasetMeta/outboundDesc?id=b4cd6705-62c0-4d88-8d0b-c5dc210c2a63&rid=8fd11d4a-e389-4526-9fc5-6674108b0f5e    
 python軟體->https://www.python.org/downloads/windows/  
 影片播放軟體->https://potplayer.daum.net/  
 Ngrok軟體->https://ngrok.com/  
