@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask Template</title>
+<style>
+
+tr {
+      border: 1px solid black;
+      
+    }
+table {
+      
+      float: left;
+    }
+td{
+  height: 30px;
+}
+</style>
+</head>
+<body>
+  <h1>匯率</h1>
+ <h1>{{d}}</h1>
+ <h1>{{da}}</h1>
+  <form method="POST" action="/findA">
+
+    <select name="colour" method="GET" action="/">
+        <option  selected></option>
+        {% for key, value in data.items()  %}
+          <option value="{{key}}">{{ key }}</option>
+        {% endfor %}
+          </select>
+          <input type="submit" value ="Submit">
+        </form>
+ <hr>
+  <table>
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>name</th>
+      </tr>
+    </thead>
+    <tbody>
+{% for key, value in data.items() %}
+  <tr>
+    <th>{{ key }}</th>
+    <td>{{ value }}</td>
+  </tr>
+  {% endfor %}
+</tbody>
+</table>
+
+
+</body>
+</html>

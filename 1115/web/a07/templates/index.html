@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask Template</title>
+<style>
+
+tr {
+      border: 1px solid black;
+      
+    }
+table {
+      
+      float: left;
+    }
+td{
+  height: 30px;
+}
+</style>
+</head>
+<body>
+ 
+  <table class="table table-striped" >
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">name</th>
+      </tr>
+    </thead>
+    <tbody>
+{% for key, value in data.items() %}
+  <tr>
+    <th scope="row">{{ key }}</th>
+    <td>{{ value }}</td>
+  </tr>
+  {% endfor %}
+</tbody>
+</table>
+
+
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask Template</title>
+<style>
+
+tr {
+      border: 1px solid black;
+      
+    }
+table {
+      
+      float: left;
+    }
+td{
+  height: 30px;
+}
+</style>
+</head>
+<body>
+  <h1>匯率</h1>
+  <table >   
+    {% for objA in a %}
+    <tr>
+      <td>{{objA}}</td>    
+    </tr>
+    {% endfor %}   
+  </table>
+  <table >   
+    {% for objB in b %}
+    <tr>
+      <td>{{objB}}</td>    
+    </tr>
+    {% endfor %}   
+  </table>
+
+</body>
+</html>
