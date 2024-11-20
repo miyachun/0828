@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask Template</title>
+<style>
+
+
+table {
+      
+      float: left;
+    }
+td{
+  border: 1px solid black;
+  height: 30px;
+}
+</style>
+</head>
+<body>
+
+  <form method="POST" action="">
+
+    <select name="colour" method="GET" action="/">
+        <option  selected></option>       
+        <option value="八德區">八德區</option>
+        <option value="大園區">大園區</option>
+        <option value="大溪區">大溪區</option>
+        <option value="中壢區">中壢區</option>       
+          </select>           
+
+          <input type="submit" value ="Submit">     
+       
+       
+        </form>
+
+        <hr> 
+  {% for key, value in b.items() %}
+  <table >
+          {% if key == 'area' %}
+          {% for areapost in value %}
+          <tr>
+            <td>{{ areapost}}</td> 
+          </tr>
+          {% endfor %}
+          {% endif %}
+  
+          {% if key == 'name' %}  
+          {% for namepost in value %}
+          <tr>
+            <td>{{ namepost}}</td>  
+          </tr>
+          {% endfor %}
+          {% endif %}
+  
+          {% if key == 'addr' %}  
+          {% for addrpost in value %}
+          <tr>
+            <td>{{addrpost}}</td>  
+          </tr>
+          {% endfor %}
+          {% endif %}
+  
+          {% if key == 'tel' %}  
+          {% for telpost in value %}
+          <tr>
+            <td>{{ telpost}}</td>  
+          </tr>
+          {% endfor %}
+          {% endif %}
+  
+  
+           </table>
+  
+     {% endfor %}      
+  
+ 
+{% if c=='1' %} 
+
+  {% for key, value in a.items() %}
+<table >
+        {% if key == 'area' %}
+        {% for areapost in value %}
+        <tr>
+          <td>{{ areapost}}</td> 
+        </tr>
+        {% endfor %}
+        {% endif %}
+
+        {% if key == 'name' %}  
+        {% for namepost in value %}
+        <tr>
+          <td>{{ namepost}}</td>  
+        </tr>
+        {% endfor %}
+        {% endif %}
+
+        {% if key == 'addr' %}  
+        {% for addrpost in value %}
+        <tr>
+          <td>{{addrpost}}</td>  
+        </tr>
+        {% endfor %}
+        {% endif %}
+
+        {% if key == 'tel' %}  
+        {% for telpost in value %}
+        <tr>
+          <td>{{ telpost}}</td>  
+        </tr>
+        {% endfor %}
+        {% endif %}
+
+
+         </table>
+
+   {% endfor %}      
+
+   {% endif %}
+
+</body>
+</html>
