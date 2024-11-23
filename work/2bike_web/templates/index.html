@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% block content %}
+<div>
+
+  {% for key, value in a.items() %}
+<table >  
+        {% if key == 'sarea' %}  
+        {% for sareapost in value %}
+        <tr>
+          <td>{{ sareapost}}</td>  
+        </tr>
+        {% endfor %}
+        {% endif %}
+
+
+        {% if key == 'name' %}  
+        {% for namepost in value %}
+        <tr>
+          <td>{{ namepost}}</td>  
+        </tr>
+        {% endfor %}
+        {% endif %}
+
+        {% if key == 'addr' %}  
+        {% for addrpost in value %}
+        <tr>
+          <td>{{addrpost}}</td>  
+        </tr>
+        {% endfor %}
+        {% endif %}
+
+
+        {% if key == 'total' %}  
+        {% for totalpost in value %}
+        <tr>
+          <td>{{ totalpost}}</td>  
+        </tr>
+        {% endfor %}
+        {% endif %}
+
+        {% if key == 'now' %}  
+        {% for nowpost in value %}
+        <tr>
+          <td>{{ nowpost}}</td>  
+        </tr>
+        {% endfor %}
+        {% endif %}
+         </table>
+
+   {% endfor %}  
+  </div>   
+  </div>
+  {% endblock %}
+
+
+

@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block content %}
+
+     <div class="container">
+            <h1>{% block title %} -桃園觀光導覽網觀光行事曆- {% endblock %}</h1>          
+                
+              {% for key, value in a.items() %}
+            <table >
+  
+                    {% if key == 'web' %}  
+                    {% for webpost in value %}
+                    <tr style="width:100px ;">
+                      <td>{{ webpost}}</td>  
+                    </tr>
+                    {% endfor %}
+                    {% endif %}
+            
+                    {% if key == 'name' %}  
+                    {% for namerpost in value %}
+                    <tr>
+                      <td>{{namerpost}}</td>  
+                    </tr>
+                    {% endfor %}
+                    {% endif %}
+            
+  
+
+
+                     </table>
+            
+               {% endfor %}      
+            
+    
+
+
+
+            </div>
+{% endblock %}

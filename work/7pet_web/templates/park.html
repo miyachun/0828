@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block content %}
+     <div class="container">
+            <h1>{% block title %} -寵物友善公園- {% endblock %}</h1>          
+ 
+                    
+              {% for key, value in a.items() %}
+              <table >
+       
+              
+                      {% if key == 'name' %}  
+                      {% for namepost in value %}
+                      <tr>
+                        <td>{{ namepost}}</td>  
+                      </tr>
+                      {% endfor %}
+                      {% endif %}
+              
+
+              
+                      {% if key == 'info' %}  
+                      {% for infopost in value %}
+                      <tr>
+                        <td>{{ infopost}}</td>  
+                      </tr>
+                      {% endfor %}
+                      {% endif %}
+              
+
+            
+                       </table>
+              
+                 {% endfor %}    
+      
+ 
+
+
+            </div>
+{% endblock %}

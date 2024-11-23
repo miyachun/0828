@@ -1,0 +1,8 @@
+主要欄位說明:從〔"sno"：站點代號,"sna"：場站名稱(中文),"tot"：場站總停車格,"sbi"：場站目前車輛數量,"sarea"：場站區域(中文),"mday"：資料更新時間,"lat"：緯度,"lng"：經度,"ar"：地址(中文),"sareaen"：場站區域(英文),"snaen"：場站名稱(英文),"aren"：地址(英文),"bemp"：空站數量(可還車位數),"act"：全站禁用狀態(場站暫停營運)〕變更成〔sno(sno)、sna(sna)、tot(tot)、sbi(sbi)、sarea(sarea)、mday(mday)、lat(lat)、lng(lng)、ar(ar)、sareaen(sareaen)、snaen(snaen)、aren(aren)、bemp(bemp)、act(act)〕
+資料集提供機關:從〔〕變更成〔交通局〕
+資料集提供機關:從〔〕變更成〔380290000H 【交通局】〕
+
+
+
+主要欄位說明:從〔areaid(地區編碼)、areaname(地區名稱)、parkid(停車場編碼)、totalspace(總車位數)、surplusspace(剩餘車位數)、payguide(計費方式說明)、introduction(停車場介紹)、address(住址)、wgsx(經度)、wgsy(緯度)〕變更成〔parkId(parkId)、areaId(areaId)、areaName(areaName)、parkName(parkName)、totalSpace(totalSpace)、surplusSpace(surplusSpace)、payGuide( payGuide)、introduction(introduction)、address(address)、wgsX(wgsX)、wgsY(wgsY)〕
+資料集提供機關:從〔〕變更成〔380290000H 【交通局】〕

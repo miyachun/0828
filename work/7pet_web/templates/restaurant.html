@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block content %}
+     <div class="container">
+            <h1>{% block title %} -桃園市寵物友善空間名單- {% endblock %}</h1>          
+ 
+                    
+              {% for key, value in a.items() %}
+              <table >
+
+              
+                      {% if key == 'name' %}  
+                      {% for namepost in value %}
+                      <tr>
+                        <td>{{ namepost}}</td>  
+                      </tr>
+                      {% endfor %}
+                      {% endif %}
+                      
+              
+                      {% if key == 'addr' %}  
+                      {% for addrpost in value %}
+                      <tr>
+                        <td>{{addrpost}}</td>  
+                      </tr>
+                      {% endfor %}
+                      {% endif %}
+
+            
+                       </table>
+              
+                 {% endfor %}    
+      
+ 
+
+
+            </div>
+{% endblock %}
