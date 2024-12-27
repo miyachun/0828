@@ -14,10 +14,11 @@ myP={'web':[],'name':[]}
 @app.route('/restaurant')
 def restaurant():
     global myR
-    url = 'https://data.tycg.gov.tw/api/v1/rest/datastore/756106eb-9dda-4bde-a5b7-e0659685e7eb?format=json'
-    data = urllib.request.urlopen(url).read()    
-    output = json.loads(data)
-    location=output['result']['records']
+    
+    url = open('756106eb-9dda-4bde-a5b7-e0659685e7eb.json','r',encoding="utf-8")       
+    data = json.load(url)   
+    
+    location=data['result']['records']
     for i in location:
         #print(i)
         name = i['餐廳名稱']        
@@ -34,10 +35,10 @@ def restaurant():
 def play():
     global myP
 
-    url = 'https://data.tycg.gov.tw/api/v1/rest/datastore/eae89760-4779-4bc6-9933-816d43ae9016?format=json'
-    data = urllib.request.urlopen(url).read()    
-    output = json.loads(data)
-    location=output['result']['records']
+    
+    url = open('eae89760-4779-4bc6-9933-816d43ae9016.json','r',encoding="utf-8")       
+    data = json.load(url) 
+    location=data['result']['records']
                 
     for i in location:
         #print(i)
@@ -59,10 +60,10 @@ def play():
 def index():
     global myD
 
-    url = 'https://data.tycg.gov.tw/api/v1/rest/datastore/5ae41ecf-1ea0-420d-acbf-90c59cedf999?format=json'
-    data = urllib.request.urlopen(url).read()    
-    output = json.loads(data)
-    location=output['result']['records']
+    
+    url = open('5ae41ecf-1ea0-420d-acbf-90c59cedf999.json','r',encoding="utf-8")       
+    data = json.load(url) 
+    location=data['result']['records']
 
     for i in location:
         #print(i)
