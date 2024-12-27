@@ -1,9 +1,7 @@
 import json,urllib.request
 from flask import Flask, render_template,request
-import requests
-
 import json,urllib.request
-import re
+
 
 
 app = Flask(__name__)
@@ -15,10 +13,9 @@ myH={'area':[],'name':[],'addr':[],'tel':[]}
 
 @app.route('/hospital',methods=('GET','POST'))
 def hospital():
-    url = 'https://data.tycg.gov.tw/api/v1/rest/datastore/283a5dfa-44e9-4300-8a7f-22e58ecdf7b1?format=json'
-    data = urllib.request.urlopen(url).read()    
-    output = json.loads(data)
-    location=output['result']['records']
+    url = open('283a5dfa-44e9-4300-8a7f-22e58ecdf7b1.json','r',encoding="utf-8")       
+    data = json.load(url) 
+    location=data['result']['records']
     for i in location:
         #print(i)
         area = i['縣市']        
@@ -47,10 +44,12 @@ def index():
     global myD
     global myD01      
 
-    url = 'https://data.tycg.gov.tw/api/v1/rest/datastore/2cb206f2-3fb2-42d9-9820-f3291f6bc35c?format=json'
-    data = urllib.request.urlopen(url).read()    
-    output = json.loads(data)
-    location=output['result']['records']
+    #url = 'https://data.tycg.gov.tw/api/v1/rest/datastore/2cb206f2-3fb2-42d9-9820-f3291f6bc35c?format=json'
+    #data = urllib.request.urlopen(url).read()
+    url = open('2cb206f2-3fb2-42d9-9820-f3291f6bc35c.json','r',encoding="utf-8")       
+    data = json.load(url)     
+    
+    location=data['result']['records']
     if request.method == 'POST':
         
         myD01.clear()
