@@ -3,9 +3,7 @@ from flask import Flask, render_template,request,url_for, flash, redirect, abort
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 from flask_bootstrap import Bootstrap
-import requests
-import sqlite3
-import datetime
+
 
 app = Flask(__name__)
 myD={'sarea':[],'name':[],'addr':[],'total':[],'now':[]}
@@ -14,12 +12,11 @@ myD01={'areaName':[],'parkName':[],'address':[],'totalSpace':[],'surplusSpace':[
 
 @app.route('/login')
 def login():   
-    url = 'https://data.tycg.gov.tw/api/v1/rest/datastore/0381e141-f7ee-450e-99da-2240208d1773?format=json'
-
-    data = urllib.request.urlopen(url).read()
+    url = open('0381e141-f7ee-450e-99da-2240208d1773.json','r',encoding="utf-8")       
+    data = json.load(url) 
     
-    output = json.loads(data)
-    location=output['result']['records']
+    
+    location=data['result']['records']
    
     for i in location:
         #print(i)
@@ -45,12 +42,13 @@ def login():
 @app.route('/')
 def index():
     
-    url = 'https://data.tycg.gov.tw/api/v1/rest/datastore/a1b4714b-3b75-4ff8-a8f2-cc377e4eaa0f?format=json'
-
-    data = urllib.request.urlopen(url).read()
     
-    output = json.loads(data)
-    location=output['result']['records']
+
+    url = open('a1b4714b-3b75-4ff8-a8f2-cc377e4eaa0f.json','r',encoding="utf-8")       
+    data = json.load(url)
+    
+    
+    location=data['result']['records']
    
     for i in location:
         #print(i)
